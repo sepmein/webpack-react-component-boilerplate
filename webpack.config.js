@@ -1,0 +1,17 @@
+/**
+ * Created by Spencer on 16/1/12.
+ */
+'use strict';
+const devServerConf = require('./run/config/webpack-dev-server-config');
+const loaders = require('./develop/config/loaders');
+module.exports = {
+    entry: './develop/entry.js',
+    output: {
+        filename: 'bundle.js',
+        path: __dirname + '/run/build'
+    },
+    devServer: devServerConf,
+    module: {
+        loaders: loaders
+    }
+};

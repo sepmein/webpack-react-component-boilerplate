@@ -10,3 +10,4 @@ jspm_packages
 
 # dev: build cache
 release/build
+run/build

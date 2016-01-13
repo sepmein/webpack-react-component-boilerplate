@@ -7,6 +7,8 @@ jspm_packages
 
 # ide: webstorm
 .idea
+# ide: vscode
+.vscode
 
 # dev: build cache
 release/build

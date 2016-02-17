@@ -1,11 +1,11 @@
 /**
  * Created by Spencer on 16/1/12.
  */
-module.exports = module.exports = [
+module.exports = [
     {
-        test: /\.css$/, loader: "style-loader!css-loader"
+        test: /\.css$/, loader: "style-loader!css-loader", include: require('path').resolve(__dirname, '../')
     },
     {
-        test: /\.jsx$/, loader: "jsx-loader"
+        test: /\.jsx?$/, loader: "babel-loader", include: require('path').resolve(__dirname, '../')
     }
 ];

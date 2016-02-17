@@ -1,5 +1,16 @@
-var ReactDom = require('react-dom');
-var Hello = require('./component/main.jsx');
-var React = require('react');
+'use strict';
+import React from 'react';
+import {render} from 'react-dom'
+import {Provider} from 'react-redux';
+import {createStore,applyMiddleware} from 'redux';
+import App from './component/main.jsx';
+import reducers from './component/reducers';
+import sagaMiddleWare from './component/sagas';
 
-ReactDom.render(<Hello />, document.getElementById('app'));
+let store = createStore(reducers, applyMiddleware(sagaMiddleWare));
+render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('app')
+);

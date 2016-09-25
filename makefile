@@ -16,12 +16,11 @@ cleanRelease:
 cleanRun:
 	rm -r run/build
 
-# ansible
 # ansible:
-#	ansible-playbook release/playbook_release.yaml
+	ansible-playbook release/playbook_release.yaml
 
 # publish
-# publish: cleanRelease cleanRun build copy ansible
+	publish: cleanRelease cleanRun build copy ansible
 
 ###################
 

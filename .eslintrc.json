@@ -1,0 +1,12 @@
+{
+    "extends": "standard",
+    "installedESLint": true,
+    "plugins": [
+        "standard",
+        "promise",
+        "react"
+    ],
+    "ecmafeatures":{
+        "jsx": true
+    }
+}

@@ -1,12 +1,15 @@
 # lib: npm
 node_modules
 npm-debug-log
+cnpm-debug-log
+pnpm-debug-log
 
 # lib: jspm
 jspm_packages
 
 # ide: webstorm
 .idea
+
 # ide: vscode
 .vscode
 
